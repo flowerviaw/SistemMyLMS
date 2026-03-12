@@ -1,2 +1,20 @@
-﻿// See https://aka.ms/new-console-template for more information
-Console.WriteLine("Hello, World!");
+﻿public class user
+{
+    public string nama;
+    public string email;
+    public string password;
+    public string role;
+
+    public user(string nama, string email, string password, string role)
+    {
+        this.nama = nama;
+        this.email = email;
+        this.password = password;
+        this.role = role;
+    }
+
+    public void Tampilkaninfo()
+    {
+        Console.WriteLine($"Nama: {nama} | Role: {role}");
+    }
+}
